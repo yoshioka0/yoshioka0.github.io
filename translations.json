@@ -1,0 +1,54 @@
+{
+    "en": {
+        "greeting": "Hello! I'm Yoshioka, welcome to my web museum!",
+        "heading": "Explore My Projects",
+        "description": "Discover the projects I've worked on",
+        "project1_title": "Japanese Guidebook",
+        "project1_description": "An ultimate guide for learning Japanese.",
+        "project2_title": "Smiling Buddha",
+        "project2_description": "Description unavailable.",
+        "coming_soon_title": "Upcoming Project",
+        "coming_soon_description": "Stay tuned for something exciting!",
+        "popup_title": "Unauthorized Access",
+        "popup_message": "You are not authorized to access this area. Please contact the administrator for more information."
+    },
+    "ja": {
+        "greeting": "こんにちは！私はヨシオカ、私のウェブ博物館へようこそ！",
+        "heading": "私のプロジェクトを探る",
+        "description": "私が取り組んだプロジェクトを発見する",
+        "project1_title": "日本語ガイドブック",
+        "project1_description": "日本語学習のための究極のガイド。",
+        "project2_title": "スマイリング・ブッダ",
+        "project2_description": "説明は利用できません。",
+        "coming_soon_title": "次回のプロジェクト",
+        "coming_soon_description": "何かエキサイティングなことが待っています！",
+        "popup_title": "不正アクセス",
+        "popup_message": "このエリアにアクセスする権限がありません。詳細については管理者にお問い合わせください。"
+    },
+    "kn": {
+        "greeting": "ನಮಸ್ಕಾರ! ನಾನು ಯೋಶಿಯೋಕೆ, ನನ್ನ ವೆಬ್ ಮ್ಯೂಜಿಯಂಗೆ ಸ್ವಾಗತ!",
+        "heading": "ನನ್ನ ಪ್ರಾಜೆಕ್ಟ್ಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
+        "description": "ನಾನು ಮಾಡಿದ ಪ್ರಾಜೆಕ್ಟ್ಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
+        "project1_title": "ಜಪಾನಿ ಮಾರ್ಗದರ್ಶಕ ಪುಸ್ತಕ",
+        "project1_description": "ಜಪಾನಿ ಕಲಿಯಲು ಒಂದು ಸಮಗ್ರ ಮಾರ್ಗದರ್ಶಕ.",
+        "project2_title": "ನಗುವ ಬುದ್ಧ",
+        "project2_description": "ವಿವರ ಇಲ್ಲ.",
+        "coming_soon_title": "ಆಗಮಿಸುವ ಪ್ರಾಜೆಕ್ಟ್",
+        "coming_soon_description": "ಊರಿಗಿಂತ ನವೀನವಾದ ಏನೋ ಆಗುವುದಾಗಿ ನಿರೀಕ್ಷಿಸಿ!",
+        "popup_title": "ಅನಧಿಕೃತ ಪ್ರವೇಶ",
+        "popup_message": "ನೀವು ಈ ಪ್ರದೇಶವನ್ನು ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಯಾಗಿಲ್ಲ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ನಿರ್ವಹಣಾಧಿಕಾರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ."
+    },
+    "hi": {
+        "greeting": "नमस्ते! मैं योशियोका, मेरे वेब म्यूजियम में स्वागत है!",
+        "heading": "मेरे प्रोजेक्ट्स को एक्सप्लोर करें",
+        "description": "उन प्रोजेक्ट्स को खोजें जिन पर मैंने काम किया है",
+        "project1_title": "जापानी गाइडबुक",
+        "project1_description": "जापानी सीखने के लिए एक संपूर्ण गाइड।",
+        "project2_title": "स्माइली बुद्धा",
+        "project2_description": "विवरण अनुपलब्ध।",
+        "coming_soon_title": "आगामी प्रोजेक्ट",
+        "coming_soon_description": "कुछ रोमांचक होने के लिए बने रहें!",
+        "popup_title": "अनधिकृत पहुंच",
+        "popup_message": "आपको इस क्षेत्र तक पहुंचने की अनुमति नहीं है। कृपया अधिक जानकारी के लिए व्यवस्थापक से संपर्क करें।"
+    }
+}

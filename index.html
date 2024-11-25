@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="lang-btn">
+<!-- Language Dropdown -->
+<div class="language-dropdown">
+    <button id="languageIcon" class="language-btn">
+        <span class="icon">&#x1F310;</span> <!-- Icon for language () -->
+    </button>
+    <div id="languageMenu" class="language-menu">
+        <button class="language-option" data-lang="en">English</button>
+        <button class="language-option" data-lang="ja">Japanese</button>
+        <button class="language-option" data-lang="hi">Hindi</button>
+        <button class="language-option" data-lang="kn">Kannada</button>
+    </div>
+    </div>
+</div>
+
+    <!-- Typewriter Greeting Section -->
+    <div id="greeting-container">
+        <div id="greeting">Hello! I'm <span class="typing-cursor"></span></div>
+    </div>
+
+    <header>
+        <h1 id="heading">Explore My Projects</h1>
+        <p id="description">Discover the projects I've worked on</p>
+    </header>
+
+    <main>
+        <section class="cards-container">
+            <a href="https://yoshioka0.github.io/nihongo/" class="card" id="project1">
+                <h2 id="project1_title">Japanese Guidebook</h2>
+                <p id="project1_description">An ultimate guide for learning Japanese.</p>
+                <div class="btn">View Project</div>
+            </a>
+          
+            <div class="card upcoming">
+                <h2 id="coming_soon_title">Upcoming Project</h2>
+                <p id="coming_soon_description">Stay tuned for something exciting!</p>
+                <div class="btn disabled">Coming Soon</div>
+            </div>
+ 
+            <!-- Card element -->
+            <a href="#" class="card" id="project2" onclick="showPopup()">
+                <h2 id="project2_title">Smiling Buddha</h2>
+                <p id="project2_description">Description unavailable.</p>
+                <div class="btn">Spy Project</div>
+            </a>
+
+        </section>
+    </main>
+
+    <!-- Popup structure -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <h2 id="popup_title">Unauthorized Access</h2>
+            <p id="popup_message">You are not authorized to access this area. Please contact the administrator for more information.</p>
+            <button class="close-button" id="closePopupButton">Close</button>
+        </div>
+    </div>
+</body>
+</html>

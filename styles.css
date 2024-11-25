@@ -1,0 +1,365 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh; /* Allows body to grow taller if content exceeds viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.lang-btn {
+	width: 100%;
+    background: ;
+    display: flex;
+    justify-content: flex-start; 
+    padding: 5px 20px;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Language Button */
+.language-btn {
+    color: white;
+    font-size: 16px;
+    padding: 0px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+	background: linear-gradient(135deg, #6a11cb, #2575fc);
+    overflow: hidden;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* Adjust text and icon placement */
+.language-btn .icon-text {
+    margin: auto;
+}
+
+.language-btn .icon {
+    font-size: 20px;
+    margin: auto; /* Align the icon to the right-most corner */
+}
+
+/* Animated background effect on hover */
+.language-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Language Menu (Frosted Glass Effect) */
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+    width: auto;
+    z-index: 100;
+    padding: 10px 10px;
+}
+
+/* Show the dropdown on button hover */
+.language-dropdown:hover .language-menu {
+    display: block;
+}
+
+/* Language Option */
+.language-option {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker for contrast */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 2px 0;
+    border: 1px solid grey;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on language options */
+.language-option:hover {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    z-index: 2;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Geometric Background Shapes */
+body::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+    animation: rotate 10s linear infinite;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+    animation: rotate 15s linear infinite reverse;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Card Container */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    z-index: 2;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* View Button Styling */
+.card .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff7b7b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card .btn:hover {
+    background-color: #ff4d4d;
+}
+
+/* Upcoming Project Card */
+.card.upcoming {
+    background: rgba(255, 123, 123, 0.1);
+}
+
+.card.upcoming .btn {
+    background-color: #f39c12;
+    cursor: not-allowed;
+}
+
+.card.upcoming .btn:hover {
+    background-color: #f39c12;
+}
+
+/* Popup styling */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+
+        .popup-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+            z-index: 1001;
+        }
+
+        .popup-content h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #ff4d4d;
+        }
+
+        .popup-content p {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .close-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .close-button:hover {
+            background-color: #e63939;
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+/* Greeting Section Styling */
+#greeting-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+#greeting {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-break: break-word;
+    display: inline-block;
+    position: relative;
+}
+
+/* Typing Cursor */
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: white;
+    animation: blink 0.8s steps(2, start) infinite;
+    vertical-align: middle; /* Aligns with text */
+}
+
+/* Cursor Blink Animation */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Design for Greeting */
+@media (max-width: 768px) {
+    #greeting {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #greeting {
+        font-size: 1.2rem;
+    }
+}
+
